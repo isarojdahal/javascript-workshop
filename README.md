@@ -11,3 +11,4 @@
 ## _JavaScript Session Videos_
 
 - [**Day 1 - Introduction to JavaScript**](https://www.youtube.com/live/H8pzyA0poHs?si=vozIv440VSv8FaDL)
+- [**Day 2 - Understanding ECMAScript, Browser Rendering Process, Setting Environment for JavaScript**](https://www.youtube.com/watch?v=l5pbdLT2mP0)
