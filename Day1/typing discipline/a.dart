@@ -1,8 +1,8 @@
-dynamic adder(a, b) {
+dynamic adder(int a, b) {
   return a + b;
 }
 
 void main() {
-  var sum = 0;
+  int sum = 0;
   sum = adder(1, 2);
 }
