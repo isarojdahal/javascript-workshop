@@ -1,6 +1,6 @@
 # 1 Month Long Free JavaScript Session
 
-## _Useful links_
+## _Useful links_ 🔗
 
 [**EverydayKarma YouTube Channel**](https://www.youtube.com/@EverydayKarma)
 
@@ -8,8 +8,12 @@
 
 [**JavaScript Syllabus**](https://docs.google.com/document/d/1QcraQLC0FDO9UJMxBanO8eqtYboY7UX-5eKeaofoCKA/edit?usp=sharing)
 
-## _JavaScript Session Videos_
+[**1 Month JavaScript YouTube Playlist**](https://youtube.com/playlist?list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&si=4IAQsqG2KkePUom7)
 
-- [**Day 1 - Introduction to JavaScript**](https://www.youtube.com/live/H8pzyA0poHs?si=vozIv440VSv8FaDL)
+## _JavaScript Session Videos_ 💻
+
+- [**Day 1 - Introduction to JavaScript**](https://www.youtube.com/watch?v=tVG6cGkzW9E&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=1)
+
 - [**Day 2 - Understanding ECMAScript, Browser Rendering Process, Setting Environment for JavaScript**](https://www.youtube.com/watch?v=l5pbdLT2mP0&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=2&pp=iAQB)
 
+  - [**_Day 2 (Useful links and Resources)_**](./Day2/README.md)
