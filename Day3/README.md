@@ -266,11 +266,15 @@ $ node dataTypes.js
 
 ### _Symbol_
 
-A data type whose instances are unique and immutable. Symbols are often used to add unique property keys to an object that won't collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object. **_We will discuss about `symbol` datatype in more detail in future classes._**
+A data type whose instances are unique and immutable. Symbols are often used to add unique property keys to an object that won't collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object.
+
+**_We will discuss about `symbol` datatype in more detail in future classes._**
 
 ### _Object_
 
-In JavaScript, objects can be seen as a collection of properties. With the object literal syntax, a limited set of properties are initialized; then properties can be added and removed. Property values can be values of any type, including other objects, which enables building complex data structures. Properties are identified using key values. A key value is either a String value or a Symbol value.
+In JavaScript, objects can be seen as a collection of properties. With the object literal syntax, a limited set of properties are initialized; then properties can be added and removed.
+
+Property values can be values of any type, including other objects, which enables building complex data structures. Properties are identified using key values. A key value is either a String value or a Symbol value.
 
 ```JS
 let person = {
@@ -305,6 +309,49 @@ Address: Kathmandu Nepal
 Can Vote: true
 ```
 
-**_NOTE: Don't worry if you can't understand JS objects right away, you will get comfortable with using JS object as we progress._**
+**_NOTE: Don't worry if you can't understand JS objects right away, you will get comfortable with using JS objects as we progress._**
 
 ## _3. Template Literals_
+
+Template literals are enclosed with backtick (`) character instead of double or single quotes, allowing for multi-line strings, string interpolation with embedded expressions.
+
+Along with having normal strings, template literals can also contain other parts called placeholders, which are embedded expressions delimited by a dollar sign and curly braces: `${expression}`.
+
+```JS
+let myName = "Everyday Karma";
+
+let greeting = `Hello ${myName}!`; // ${myName} works as a placeholder
+
+console.log(greeting);
+```
+
+**_*Output*_**
+
+```console
+$ node templateLiterals.js
+Hello Everyday Karma!
+```
+
+**_We can also invoke a function inside the `${expression}`_**
+
+```JS
+function isEligibleToVote(age) {
+  if (age < 18)
+    return "No";
+  else
+    return "Yes";
+}
+
+let myAge = 20;
+
+console.log(`Can I Vote? => ${isEligibleToVote(myAge)}`);
+```
+
+**_Output_**
+
+```console
+$ node templateLiterals.js
+Can I Vote? => Yes
+```
+
+**_NOTE: Template/String literals are very useful feature, we will explore about template literals even more in future sessions._**
