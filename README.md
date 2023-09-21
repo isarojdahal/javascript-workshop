@@ -14,6 +14,10 @@
 
 - [**Day 1 - Introduction to JavaScript**](https://www.youtube.com/watch?v=tVG6cGkzW9E&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=1)
 
-- [**Day 2 - Understanding ECMAScript, Browser Rendering Process, Setting Environment for JavaScript**](https://www.youtube.com/watch?v=l5pbdLT2mP0&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=2&pp=iAQB)
+- [**Day 2 - Understanding ECMAScript, Browser Rendering Process, Setting Environment for JavaScript**](https://www.youtube.com/watch?v=4Kg-a8Eivs0&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=2)
 
   - [**_Day 2 (Useful links and Resources)_**](./Day2/README.md)
+
+- [**Day 3 - Variables, DataTypes, Template Literals**](#)
+
+  - [**_Day 3 (Topics Explanation)_**](./Day3/README.md)
