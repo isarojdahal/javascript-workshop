@@ -4,7 +4,7 @@
 
 [_Variables in JavaScript_](#1-variables-in-javascript-var-let-and-const)
 
-[_DataType is JavaScript_](#2-datatypes-in-javascript)
+[_DataType in JavaScript_](#2-datatypes-in-javascript)
 
 [_Template Literals_](#3-template-literals)
 
