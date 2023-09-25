@@ -23,3 +23,5 @@
   - [**_Day 3 (Topics Explanation)_**](./Day3/README.md)
 
 - [**Day 4 - Nested and Tagged Templates, Async-Defer JS Load, Operators**](https://www.youtube.com/watch?v=Mpi6oF6YYLA&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=4)
+
+- [**Day 5 - JavaScripts Objects in Detail**](https://www.youtube.com/watch?v=8rjeLFf5eAk&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=5&t=6s)

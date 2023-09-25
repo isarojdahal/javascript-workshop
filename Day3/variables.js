@@ -1,3 +1,4 @@
+// JavaScript Object
 let student = {
   name: "EverydayKarma",
   age: false,
@@ -6,3 +7,4 @@ let student = {
 };
 
 console.log(student);
+console.log(student.name); // overrides the old value "EverydayKarma" by new value "adf"
