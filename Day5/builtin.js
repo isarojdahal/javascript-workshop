@@ -1,3 +1,6 @@
+/*
+ * Math builtin object and its methods
+ */
 // console.log(Math.max(1, 2, 3, 4));
 // console.log(Math.min(-10, 2, -20, 4));
 // console.log(Math.abs(10));
@@ -8,6 +11,9 @@
 // console.log(Math.floor(1.00001));
 // console.log(Math.ceil(1.0001));
 
+/*
+ * Date builtin object and its methods
+ */
 // Date  : Timestamp
 // new Date () :sept 10 2020,
 // let d = new Date();

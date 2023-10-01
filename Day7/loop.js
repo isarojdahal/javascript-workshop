@@ -1,70 +1,71 @@
-// for (let i = 0; i < 3; i++) {
-//   console.log("Cat");
-// function()
-// logic...
-// data..
-// }
+/*
+ * Usage of loops in arrays
+ */
+// A list of students
+const studentList = [
+  "Sa Ma Ya",
+  "Luna Sapkota",
+  "Ashmin Bhujel",
+  "Nishan Tolang",
+  "Circus",
+  "Ankit Bhusal",
+  "Binayak Dangi",
+];
 
-// let i = 0;
-// while (i < 3) {
-//   console.log("Cat");
-//   i++;
-// }
+// Normal for loop
+for (let i = 0; i < studentList.length; i++) {
+  console.log(studentList[i]);
+}
 
-// let i = 0;
-// do {
-//   console.log("Cat");
-//   i++;
-// } while (i < 3);
+// for in loop
+for (let i in studentList) {
+  // "i" is the index of the array elements
+  console.log(studentList[i]);
+}
 
-// const cities = ["Tokyo", "London City"];
+// for of loop
+for (let student of studentList) {
+  // "student" is the value of the array elements
+  console.log(student);
+}
 
-// for (let i = 0; i < cities.length; i++){
-//   console.log(cities[i])
-// }
+// forEach loop
+studentList.forEach(function (student) {
+  // "student" is the value of the array elements
+  console.log(student);
+});
 
-// ["Tokyo", "London City"].forEach(function (value, i) {
-//   console.log(value);
-// });
+/*
+ * Usage of loops in objects
+ */
+const personInfo = {
+  name: "Shyam",
+  age: 20,
+  address: "Kathmandu",
+};
 
-// For each.
-// For in loop
-// For of loop.
+// for in loop
+for (let i in personInfo) {
+  // "i" is the key of the object
+  console.log(i, personInfo[i]);
+}
 
-// For of loop.
-// const studentList = ["Samaya", "Rakesh"];
+// for of loop
+for (let key of Object.keys(personInfo)) {
+  // "key" is the key of the object
+  console.log(key, personInfo[key]);
+} // Object.keys() returns an array of keys of the object passed as argument
 
-// for (let student of studentList) {
-//   console.log(student);
-// }
+// forEach loop
+// Since Object.keys() returns an array, we can use forEach loop on it
+Object.keys(personInfo).forEach(function (key) {
+  // "key" is the key of the object
+  console.log(key, personInfo[key]);
+});
 
-// let channel = "Discord";
-
-// for (let c of channel) {
-//   console.log(c);
-// }
-
-// const cities = ["Tokyo", "London City"];
-
-// for (let index in cities) {
-//   console.log(cities[index]);
-// }
-
-// const student = {
-//   name: "ABC",
-//   address: {
-//     lat: 1,
-//     long: 2,
-//   },
-// };
-
-// for (const key in student) {
-//   // console.log(key);
-//   let value = student[key];
-
-//   if (typeof value === "object") {
-//     for (const k in value) {
-//       console.log(value[k]);
-//     }
-//   } else console.log(value);
-// }
+// Normal for loop
+// Since Object.keys() returns an array, we can use normal for loop on it
+const keys = Object.keys(personInfo);
+for (let i = 0; i < keys.length; i++) {
+  console.log(keys[i], personInfo[keys[i]]);
+}

@@ -24,4 +24,8 @@
 
 - [**Day 4 - Nested and Tagged Templates, Async-Defer JS Load, Operators**](https://www.youtube.com/watch?v=Mpi6oF6YYLA&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=4)
 
-- [**Day 5 - JavaScripts Objects in Detail**](https://www.youtube.com/watch?v=8rjeLFf5eAk&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=5&t=6s)
+- [**Day 5 - JavaScripts Objects in Detail**](https://youtu.be/8rjeLFf5eAk?list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A)
+
+- [**Day 6 - Spread Operators, Destructure Assignments,Arrays and its inbuilt functions in Detail**](https://www.youtube.com/watch?v=CLSQ0pTUl_U&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=6)
+
+- [**Day 7 - For of, for in Loops, Constructor Function, Recursive Function, IIFE, Arrow Function in JavaScript**](https://www.youtube.com/watch?v=nK9KmH_OwZ8&list=PLckS_N3kOwFEpcaJ8FZ0dsEkmxg6NXd7A&index=7)

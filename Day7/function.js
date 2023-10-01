@@ -1,125 +1,67 @@
-// function add(a, b, c, d) {
-//   //   let a = 1;
-//   //   let b = 2;
+// Normal function
+function add(a, b) {
+  return a + b;
+}
+console.log(add(2, 3));
 
-//   return 10.2;
-// }
+// Expression function
+const square = function (a) {
+  return a * a;
+};
+console.log(square(2));
 
-// add(1, 20);
+// Arrow function
+// Arrow function is a shorter syntax for a function expression.
+const cube = (a) => {
+  return a * a * a;
+};
+console.log(cube(3));
 
-// function call, and arg pass.
+// IIEF (Immediately Invoked Function Expression)
+// It is a function that is executed right after it is created.
+(function () {
+  console.log("I am IIEF");
+})();
 
-// Old  / alternative.
-// let add = new Function(
-//   "a",
-//   "b",
-//   "c",
-//   "d",
-//   `
+// Recursive function
+// A function that calls itself is called a recursive function.
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+console.log(factorial(4));
 
-// let num = 10;
-// console.log(num);
-// return a+b;
-
-// `
-// );
-
-// console.log(add(1, 2));
-
-// calling technique
-
-// function add(a, b) {
-//   console.log(a + b);
-// }
-
-// add.call(add, 1, 2);
-
-//
-
-// function add(...rest) {
-//   console.log(rest);
-// }
-
-// add(1, 20, 30, 40);
-
-// let printer = {
-//   log(...data) {
-//     for (const d of data) {
-//       console.log(d);
-//     }
-//   },
-// };
-
-// printer.log("saroj", "23", "live", "chat","`11");
-
-// function student(a, { name:Name, ...other }) {
-//   console.log(other);
-// }
-
-// let s = {
-//   name: "A",
-//   address: "B",
-//   def: "def",
-// };
-
-// student("A", s);
-
-// Recursive Function.
-
-// Complex;
-// 1*2*3*4*5
-// Fibonacci.
-// Factorial
-// Tower of Hannoi
-// Data structure.
-
-// function add(a, b) {
-//   return a + b;
-// }
-// console.log(typeof add);
-
-// let add = (a, b) => a + b;
-
-// console.log(addingFunction(1, 2));
-
-// function outer(d, e) {
-//   return function inner(a, b) {
-//     console.log(a, b);
-//   };
-// }
-
-// outer()(1, 2);
-
-//  function inner(a, b) {
-// console.log(a, b);
-// }
-
-// IIFE
-
-// let d = (function dot() {
-//   console.log("dot");
-// })();
-
-// logic.
-// let logic = (() => {
-//   let a = 10;
-//   let b = 1;
-// })();
-
-// let add = (a, b) => a + b;
-
-// add.others = "others property";
-
-// console.log(add.others);
-
-function Student(firstName) {
-  let f = "";
-  this.fn = firstName;
-  this.info = function () {};
+// Function as a blueprint for creating objects
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.getInfo = function () {
+    return `Name: ${this.name}, Age: ${this.age}`;
+  };
 }
 
-let s = new Student("Harry");
-console.log(s.fn);
+const person1 = new Person("Harry", 20);
+console.log(person1.getInfo());
 
-let s2 = new Student("Sam");
-console.log(s2.fn)
+// Usage of spread operator in function
+const nums = [1, 2, 3, 4, 5];
+
+function addNums(...nums) {
+  let sum = 0;
+  nums.forEach((num) => (sum += num));
+  return sum;
+}
+console.log(addNums(...nums));
+
+// Usage of destructuring in function
+const person = {
+  name: "Ramesh",
+  age: 22,
+};
+
+function getPersonInfo({ name, age }) {
+  return `Name: ${name}, Age: ${age}`;
+}
+console.log(getPersonInfo(person));
