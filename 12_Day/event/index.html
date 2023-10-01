@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling, Capturing and Delegation</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container center" id="level-0">
+      <div id="level-1" class="center smooth-animation">
+        <div id="level-2" class="center smooth-animation">
+          <div id="level-3" class="center smooth-animation"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./event.js"></script>
+  </body>
+</html>
