@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="hero-section">
+      <div class="container hero-section-container">
+        <h1>Introduction to DOM</h1>
+        <h2 id="secondary-text">Let's learn DOM...</h2>
+        <p class="description-text">Hi there, hope everyone is learn</p>
+        <p class="para">This is just p</p>
+        <div class="text-container">
+          <p class="para">This is first text</p>
+          <p class="para">This is second text</p>
+          <p class="para">This is third text</p>
+          <p class="para">This is fourth text</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // console.log(document.body);
+    // let div = document.getElementById("hero-section");
+    // div.innerHTML = "Hello";
+
+    // let div = document.getElementsByClassName("container")[0];
+    // console.log(div);
+
+    // let div = document.querySelector("#hero-section > .container ");
+    // console.log(div);
+
+    // const h1 = document.getElementsByTagName("h1")[0];
+    // h1.style.color = "red";
+    // h1.innerText = "Hello DOM";
+
+    const paragraphs = document.getElementsByClassName("para")[2];
+    paragraphs.innerHTML = "<b>Changed</b>";
+  </script>
+</html>

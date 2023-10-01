@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="hero-div" onmouseover="" onmouseenter=""></div>
+  </body>
+
+  <script>
+    const div = document.getElementById("hero-div");
+    div.style.height = "100px";
+    div.style.width = "400px";
+    div.style.backgroundColor = "red";
+    div.style.color = "white";
+    div.style.fontSize = "25px";
+
+    div.innerText = "<b>Hello</b>";
+
+    div.addEventListener("mouseover", function () {
+      div.innerText = "Welcome";
+      //   console.log("mouse over");
+    });
+
+    // let a +b ;
+    // function();
+
+    div.addEventListener("mouseenter", function () {
+      //   div.innerText = "Welcome";
+      console.log("mouse entered");
+    });
+
+    div.addEventListener("mouseleave", function () {
+      //   console.log("mouse leave vayo ");
+      div.innerText = "Bye";
+    });
+  </script>
+</html>

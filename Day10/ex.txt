@@ -1,0 +1,10 @@
+
+<div id="hero-section">
+<div class="container hero-section-container">
+<h1>Introduction to DOM</h1>
+<h2 id="secondary-text">Let's learn DOM...</h2>
+<p class="description-text">Hi there, hope everyone is learn <p class="para">This is just p</p>
+<div class="text-container">
+<p class="para">This is first text</p> <p class="para">This is second text</p> <p class="para">This is third text</p> <p class="para">This is fourth text</p> </div>
+</div>
+</div>

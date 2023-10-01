@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      onmouseover="doSomething()"
+      onmouseleave="doAnotherThing()"
+      onmouseenter="doo()"
+    ></div>
+  </body>
+
+  <script>
+    let div = document.getElementsByTagName("div")[0];
+    div.style.backgroundColor = "red";
+    div.style.color = "white";
+    div.style.fontSize = "20px";
+    div.innerHTML = `<b> Hello </b>`;
+
+    // over
+    // enter.
+    // leave
+
+    function doo() {
+      console.log("mouse enter");
+    }
+    function doSomething() {
+      div.innerHTML = "Welcome";
+      console.log("mouse over");
+    }
+
+    function doAnotherThing() {
+      div.innerHTML = "Bye";
+      console.log("mouse leave");
+    }
+  </script>
+</html>
