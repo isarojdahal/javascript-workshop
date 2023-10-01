@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #level1 {
+        background: red;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+      }
+
+      #level2 {
+        margin-top: 50px;
+        background: green;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+      }
+
+      #level3 {
+        margin-top: 80px;
+        background: blue;
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="level1">
+      <div id="level2">
+        <div id="level3">
+          <h1>Hii</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- <script src="chaining.js"></script> -->
+
+  <!-- Bubbling phase -->
+  <!-- Capturing Phase : Trickling phase. -->
+
+  <script>
+    const level1 = document.getElementById("level1");
+    const level2 = document.getElementById("level2");
+    const level3 = document.getElementById("level3");
+
+    level1.addEventListener("click", (e) => {
+      //   alert(`target : ${e.target.id}, currentTarget: ${e.currentTarget.id}`);
+    });
+
+    level2.addEventListener("click", (e) => {
+      //   alert(`target : ${e.target.id}, currentTarget: ${e.currentTarget.id}`);
+    });
+
+    // Event Delegation.
+    level3.addEventListener("click", (e) => {
+      //   alert(`target : ${e.target.id}, currentTarget: ${e.currentTarget.id}`);
+
+      //   console.log(e.target.tagName);
+
+      if (e.target.tagName === "H1") {
+        //task
+        console.log("hii clicked");
+      } else if (e.target.tagName === "DIV") {
+        console.log("div clicked");
+        //logic
+      }
+    });
+
+    // window.
+    // window.document.
+    // proper
+  </script>
+</html>

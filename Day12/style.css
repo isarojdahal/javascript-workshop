@@ -1,0 +1,23 @@
+#level1 {
+  background: red;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+#level2 {
+  margin-top: 50px;
+  background: green;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+#level3 {
+  margin-top: 80px;
+  background: blue;
+  height: 50px;
+  width: 50px;
+}
