@@ -1,0 +1,39 @@
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col > img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.col > img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#imagebox {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+span#close-btn {
+  color: white;
+  float: right;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+}

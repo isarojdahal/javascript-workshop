@@ -1,0 +1,13 @@
+#gameboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+.cell {
+  height: 100px;
+  width: 25%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
