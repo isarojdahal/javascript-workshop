@@ -1,0 +1,119 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="doSomething(event)">
+      <input
+        type="text"
+        name="firstname"
+        placeholder="First Name"
+        id="firstName"
+      />
+      <input
+        type="text"
+        name="middlename"
+        placeholder="Middle Name"
+        id="middleName"
+      />
+      <input
+        type="text"
+        placeholder="last name"
+        name="lastname"
+        id="lastName"
+      />
+      Gender
+      <br />
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" />Female<br />
+
+      <br />
+      <!-- Checkbox -->
+      Hobbies
+      <input type="checkbox" name="hobbies" value="movies" />Movies
+      <input type="checkbox" name="hobbies" value="cricket" />cricket
+      <input type="checkbox" name="hobbies" value="reading" />Reading
+
+      <!-- Dropdown -->
+
+      <h2>Your Favorite Number</h2>
+      <select name="favoriteNumber">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+
+  <script>
+    // Third Technique
+
+    function doSomething(e) {
+      e.preventDefault();
+      const form = document.forms[0];
+      const firstName = form[0].value;
+      const middleName = form[1].value;
+      const lastName = form[2].value;
+
+      //   Radio buttons
+      const radioButtons = document.forms[0].elements.gender;
+      let selectedGender;
+
+      for (const r of radioButtons) {
+        if (r.checked) {
+          selectedGender = r.value;
+        }
+      }
+
+      //   CheckBox
+
+      const checkBoxes = document.forms[0].elements.hobbies;
+
+      let selectedCheckboxes = [];
+      for (const checkBox of checkBoxes) {
+        if (checkBox.checked) {
+          selectedCheckboxes.push(checkBox.value);
+        }
+      }
+
+      //   Dropdown.
+
+      const favoriteNumberDropdown = document.forms[0].elements.favoriteNumber;
+      let favoriteNumber;
+      for (const s of favoriteNumberDropdown) {
+        if (s.selected) {
+          favoriteNumber = s.value;
+        }
+      }
+
+      console.log(firstName, middleName, lastName);
+      console.log(selectedGender);
+      console.log(selectedCheckboxes);
+      console.log(favoriteNumber);
+    }
+    // Second Technique
+
+    // function doSomething(e) {
+    //   e.preventDefault();
+    //   const firstName = e.target[0].value;
+    //   const middleName = e.target[1].value;
+    //   const lastName = e.target[2].value;
+    //   console.log(firstName, middleName, lastName);
+    //   //
+    // }
+
+    // First Technique
+    // function getData(e) {
+    //   e.preventDefault();
+    //   const firstName = document.getElementById("firstName").value;
+    //   const middleName = document.getElementById("middleName").value;
+    //   const lastName = document.getElementById("lastName").value;
+    //   console.log(firstName, middleName, lastName);
+    // }
+  </script>
+</html>

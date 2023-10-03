@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="field" />
+    <button id="add-button">Add</button>
+    <div id="items"></div>
+  </body>
+
+  <script>
+    // down
+    // press
+    // keyup
+
+    const field = document.getElementById("field");
+    const itemsDiv = document.getElementById("items");
+    const itemBtn = document.getElementById("add-button");
+
+    itemBtn.addEventListener("click", addItem);
+
+    field.addEventListener("keydown", function (e) {
+      console.log(e);
+
+      if (e.key === "Enter") {
+        addItem();
+      }
+    });
+
+    function addItem() {
+      if (field.value) {
+        let li = document.createElement("li");
+        li.innerText = field.value;
+        itemsDiv.append(li);
+        field.value = "";
+      }
+    }
+  </script>
+</html>

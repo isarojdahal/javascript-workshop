@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <textarea rows="5" cols="20" id="messageBox"></textarea> -->
+    <div id="status" status-div></div>
+
+    <p status-div="asdf">Hello</p>
+  </body>
+
+  <!-- keydown,keypress, keyup -->
+
+  <script>
+    // const messageBox = document.getElementById("messageBox");
+    const statusDiv = document.querySelectorAll("p");
+    console.log(statusDiv);
+
+    // messageBox.addEventListener("keyup", (e) => {
+    //   let words = messageBox.value.split(" ");
+    //   let word = words.filter((word) => word != "");
+    //   statusDiv.innerHTML = `<b>Word count</b> : ${word.length}`;
+    // });
+  </script>
+</html>
