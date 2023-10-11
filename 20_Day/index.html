@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <button onclick="hideDiv()">Hide</button>
+    <button onclick="showDiv()">Show</button>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    // $("#box").css("height", "200px");
+    // $("#box").css("width", "200px");
+    // $("#box").css("backgroundColor", "red");
+
+    $("#box").css({
+      height: "200px",
+      width: "200px",
+      backgroundColor: "red",
+    });
+
+    function hideDiv() {
+      $("#box").hide(2000);
+    }
+    function showDiv() {
+      $("#box").show(2000);
+    }
+  </script>
+</html>

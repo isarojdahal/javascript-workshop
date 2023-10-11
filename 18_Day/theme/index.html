@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Changer</title>
+
+    <style>
+      :root {
+        --background-color: white;
+        --text-color: black;
+        --button-bg: green;
+      }
+
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      body.dark-theme {
+        --background-color: black;
+        --text-color: white;
+        --button-bg: white;
+      }
+    </style>
+  </head>
+  <body>
+    Hello world.
+    <button onclick="changeTheme()">Change Theme</button>
+  </body>
+
+  <script>
+    window.onload = function () {
+      if (localStorage.getItem("theme")) {
+        document.body.classList.add("dark-theme");
+      }
+    };
+    function changeTheme() {
+      document.body.classList.toggle("dark-theme");
+
+      if (document.body.classList.contains("dark-theme")) {
+        localStorage.setItem("theme", "dark");
+      } else localStorage.removeItem("theme");
+    }
+  </script>
+</html>

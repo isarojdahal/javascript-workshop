@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="field" />
+    <input type="date" name="" id="dateField" />
+    <button onclick="addTodo()">Add Todo</button>
+
+    <div id="todo-content"></div>
+  </body>
+
+  <script>
+    let todos = [];
+    // [{value:"",date:"", }]
+
+    const field = document.getElementById("field");
+    const dateField = document.getElementById("dateField");
+    const todoContentDiv = document.getElementById("todo-content");
+
+    window.onload = function () {
+      todos = JSON.parse(localStorage.getItem("todos"));
+      renderTodo();
+    };
+
+    field.addEventListener("keyup", function (e) {
+      if (e.key === "Enter") {
+        addTodo();
+      }
+    });
+
+    function addTodo() {
+      if (field.value) {
+        todos.push({ value: field.value, date: dateField.value });
+
+        localStorage.setItem("todos", JSON.stringify(todos));
+        field.value = "";
+        renderTodo();
+      }
+    }
+
+    function renderTodo() {
+      if (todos.length > 0) {
+        todoContentDiv.innerHTML = "";
+        todos.forEach((todo, index) => {
+          todoContentDiv.innerHTML += `
+          
+          <div style="display:flex;justify-content:space-between;padding:5px;">
+          
+          <li> ${todo.value} | ${todo.date} </li>
+          <button onclick="deleteTodo(${index})">Delete</button>
+
+          </div>
+          
+          
+          `;
+        });
+      } else todoContentDiv.innerHTML = "No Todos";
+      //
+    }
+
+    function deleteTodo(index) {
+      let res = confirm("Do you want to delete ? ");
+
+      if (res) {
+        todos = todos.filter((_, i) => i !== index);
+        localStorage.setItem("todos", JSON.stringify(todos));
+        renderTodo();
+      }
+      console.log(todos);
+    }
+  </script>
+</html>

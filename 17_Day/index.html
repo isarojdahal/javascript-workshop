@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    document.cookie = `username=${JSON.stringify({
+      x: 10,
+      y: 20,
+    })}; expires=${new Date(
+      Date.now() + 7 * 24 * 60 * 60 * 1000
+    ).toUTCString()}; path=/;`;
+
+    // document.cookie = `username=kailash; path=/;`;
+    // document.cookie = "location=kathmandu;";
+
+    // let myCookies = document.cookie;
+    // let d = myCookies.split(";");
+
+    // let data = {};
+    // for (const c of d) {
+    //   let key = c.split("=")[0];
+    //   let value = c.split("=")[1];
+    //   data = { ...data, [key]: value };
+    // }
+
+    // document.body.innerHTML = JSON.parse(data.username);
+
+    // document.cookie = `username=; expires=${new Date(
+    //   Date.now()
+    // ).toUTCString()}; path=/;`;
+  </script>
+</html>

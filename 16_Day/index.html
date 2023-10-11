@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+  </head>
+  <body>
+    Hello world.
+
+    <input type="text" id="myfield" />
+    <button onclick="doCopy()">Copy</button>
+    <button onclick="doCut()">Cut</button>
+  </body>
+
+  <script>
+    const field = document.getElementById("myfield");
+
+    function doCopy() {
+      document.execCommand("copy");
+    }
+
+    function doCut() {
+      document.execCommand("cut");
+    }
+
+    document.addEventListener("paste", function () {
+      field.value += text;
+    });
+  </script>
+</html>
