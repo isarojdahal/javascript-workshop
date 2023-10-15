@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    function calculateArea(length, breadth) {
+      if (isNaN(length) || isNaN(breadth)) throw "Pass only number parameters";
+      return length * breadth;
+    }
+
+    try {
+      console.log(calculateArea(10, "B"));
+    } catch (e) {
+      console.log(e);
+    }
+    // 
+  </script>
+</html>

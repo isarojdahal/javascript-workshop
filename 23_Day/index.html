@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter URL :
+    <input type="text" id="field" />
+    <div id="status"></div>
+  </body>
+
+  <script>
+    let number = [1, 2, 3];
+    let n = new Array(1, 2, 3);
+
+    const statusDiv = document.getElementById("status");
+    document.getElementById("field").addEventListener("keyup", function (e) {
+      let exp = new RegExp(
+        /^(w{3}\.[a-zA-Z0-9]+\.[a-zA-Z]{2,5}(\.[a-zA-Z]{2,4})?)$/g
+      );
+
+      //   let exp =  /^(w{3}\.[a-zA-Z0-9]+\.[a-zA-Z]{2,5}(\.[a-zA-Z]{2,4})?)$/g;
+      let r = exp.test(e.target.value);
+      console.log(r);
+
+      //   let r = e.target.value.match(exp);
+      if (r) statusDiv.innerHTML = "<b> URL is valid";
+      else
+        statusDiv.innerHTML = "<b> URL Is invalid. URL format is www.abc.com";
+    });
+  </script>
+</html>
